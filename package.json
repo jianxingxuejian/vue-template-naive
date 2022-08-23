@@ -2,6 +2,7 @@
   "name": "vue-template-naive",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "type-check build-only",
