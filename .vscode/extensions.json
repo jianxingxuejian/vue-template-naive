@@ -4,6 +4,8 @@
     "Vue.vscode-typescript-vue-plugin",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "antfu.unocss",
+    "antfu.iconify"
   ]
 }

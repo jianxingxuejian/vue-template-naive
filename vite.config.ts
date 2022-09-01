@@ -1,6 +1,6 @@
 import { fileURLToPath } from 'url'
 import { defineConfig, loadEnv } from 'vite'
-import { setupVitePlugins } from './build'
+import { setupVitePlugins, createProxy } from './build'
 
 // https://vitejs.dev/config/
 export default defineConfig(env => {
@@ -23,6 +23,11 @@ export default defineConfig(env => {
           additionalData: '@import "./src/styles/scss/index.scss";'
         }
       }
+    },
+    server: {
+      host: true,
+      port: viteEnv.VITE_PROT || 8080,
+      proxy: createProxy(viteEnv)
     },
     build: {}
   }

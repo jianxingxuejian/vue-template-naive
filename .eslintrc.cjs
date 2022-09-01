@@ -15,9 +15,20 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
+    './.eslintrc-auto-import.json',
     'plugin:prettier/recommended'
   ],
   rules: {
-    'prettier/prettier': 'error'
-  }
+    'prettier/prettier': 'error',
+    'vue/multi-word-component-names': 'off',
+    '@typescript-eslint/no-explicit-any': 'off'
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      rules: {
+        'no-undef': 'off'
+      }
+    }
+  ]
 }
