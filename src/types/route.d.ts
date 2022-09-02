@@ -50,7 +50,6 @@ declare namespace Route {
   interface Menu {
     key: string
     label: string
-    path: string
     icon?: () => import('vue').VNodeChild
     children?: Menu[]
   }
@@ -66,8 +65,8 @@ declare namespace Route {
 
   /** 多页签 */
   interface Tab {
+    key: string
     label: string
-    path: string
     icon?: () => import('vue').VNodeChild
   }
 }
