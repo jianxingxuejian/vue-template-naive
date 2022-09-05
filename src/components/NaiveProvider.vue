@@ -12,7 +12,12 @@
 </template>
 
 <script setup lang="ts">
-  import { useLoadingBar, useDialog, useMessage, useNotification } from 'naive-ui'
+  import {
+    useLoadingBar,
+    useDialog,
+    useMessage,
+    useNotification
+  } from 'naive-ui'
 
   const NaiveProviderContent = defineComponent({
     setup() {
